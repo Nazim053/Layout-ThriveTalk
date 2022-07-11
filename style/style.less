@@ -1,3 +1,6 @@
+@logoColor:#62D0DF;
+ @colorBlue:#22356F;
+@logoSize:28px;
 
 body {
     padding: 0;
@@ -15,9 +18,10 @@ body {
   margin: 0 auto;
   font-family: 'Albert Sans', sans-serif;
 
+
   &-logo {
-    color: #62D0DF;
-    font-size: 28px;
+    color: @logoColor;
+    font-size:@logoSize;
   } 
 
   &-menu {
@@ -26,20 +30,23 @@ body {
     height: 50px;
     padding-top: 10px;
     align-items: center;
+
+
   }
 
   &-link {
     display: flex;
+    
 
     &-ul {
       display: flex;
-
+      padding: 0;
       :not(:first-child) {
         margin-left: 15px;
     }
 
     :hover {
-        border-bottom: 1px solid #22356F;
+        border-bottom: 1px solid #22356F; 
         cursor: pointer;
     }
 
@@ -50,7 +57,9 @@ body {
     height: 22px;
     list-style: none;
     color: #22356F;
+    text-shadow: 0px 1px 3px @colorBlue ;
 
+      
     }
   }
 
@@ -61,6 +70,45 @@ body {
     justify-content: space-around;
     align-items: center;
 
-    &-contact {}
+    &-contact {
+      padding: 15px 40px;
+      color: white;
+      background-color: #62D0DF;
+      border-radius: 50px;
+    }
   }
+}
+
+
+.sectionHelpYou {
+  margin-top:150px;
+&-title-logo {
+  color: @logoColor;
+  font-size: @logoSize;
+}
+  &-title2 {
+    font-size: 28px;
+    color: @colorBlue;
+  }
+
+  &-text {
+    color: @colorBlue;
+    font-size: 18px;
+  }
+
+  &-bottons {
+    &-button1 {
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      background-color:#F9B640;
+    }
+    &-button2 {
+      color:#F9B640;
+      padding: 10px;
+      border: none;
+    }
+  }
+ 
+
 }

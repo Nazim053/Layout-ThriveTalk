@@ -28,6 +28,7 @@ body {
 }
 .container-link-ul {
   display: flex;
+  padding: 0;
 }
 .container-link-ul :not(:first-child) {
   margin-left: 15px;
@@ -41,6 +42,7 @@ body {
   height: 22px;
   list-style: none;
   color: #22356F;
+  text-shadow: 0px 1px 3px #22356F;
 }
 .container-links {
   width: 200px;
@@ -48,4 +50,36 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+.container-links-contact {
+  padding: 15px 40px;
+  color: white;
+  background-color: #62D0DF;
+  border-radius: 50px;
+}
+.sectionHelpYou {
+  margin-top: 150px;
+}
+.sectionHelpYou-title-logo {
+  color: #62D0DF;
+  font-size: 28px;
+}
+.sectionHelpYou-title2 {
+  font-size: 28px;
+  color: #22356F;
+}
+.sectionHelpYou-text {
+  color: #22356F;
+  font-size: 18px;
+}
+.sectionHelpYou-bottons-button1 {
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  background-color: #F9B640;
+}
+.sectionHelpYou-bottons-button2 {
+  color: #F9B640;
+  padding: 10px;
+  border: none;
 }
