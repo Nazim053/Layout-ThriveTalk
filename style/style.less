@@ -18,6 +18,13 @@ body {
   margin: 0 auto;
   font-family: "Albert Sans", sans-serif;
 
+  &-img {
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 0px;
+    right: 0;
+    z-index: -1;
+  }
   &-logo {
     color: @logoColor;
     font-size: @logoSize;
@@ -42,7 +49,7 @@ body {
       }
 
       :hover {
-        border-bottom: 1px solid #22356f;
+        border-bottom: 1px solid  @colorBlue;
         cursor: pointer;
       }
     }
@@ -66,7 +73,7 @@ body {
     &-contact {
       padding: 15px 40px;
       color: white;
-      background-color: #62d0df;
+      background-color: @logoColor;
       border-radius: 50px;
     }
   }
@@ -136,6 +143,7 @@ body {
 }
 
 .helpYouTitle {
+  color: @colorBlue;
   display: flex;
   justify-content: center;
 }
@@ -154,7 +162,7 @@ body {
     display: flex;
   }
   :nth-child(3) {
-    background-color: #62d0df;
+    background-color: @logoColor;
     display: flex;
   }
   :nth-child(4) {
@@ -163,7 +171,7 @@ body {
   }
   &-block {
     width: 100%;
-    height: 250px;
+    height: 260px;
     padding-top: 80px;
     padding-left: 50px;
 
@@ -180,21 +188,104 @@ body {
     background-color: #22356f;
 
     :nth-child(2) {
-      background-color: #0052C1;
+      background-color: #a56e07;
+    }
+    :nth-child(3) {
+      background-image: url("/img/joanna-kosinska-340748img.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
     }
   }
 
   &.threeContainer {
-      background-color: #62D0DF;
+    background-color: #42a2af;
 
     :nth-child(2) {
       background-color: #a4a8d1;
     }
 
     :nth-child(3) {
-      background-color: #8F00FF;
+      background-color: #8f00ff;
     }
+  }
+}
 
+.NutritionalFacts-grid {
+  padding-top: 100px;
+  color: @colorBlue;
+  display: grid;
+  grid-template-columns: 390px 390px 390px;
+  justify-content: space-between;
+}
+
+.YouShouldAlso {
+  padding: 100px 0;
+  display: flex;
+
+  img {
+    max-height: 550px;
   }
 
+  &-text {
+    color: @colorBlue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    line-height: 30px;
+    margin-left: 30px;
+
+    &-p {
+      font-size: 25px;
+      span {
+        color: #62d0df;
+      }
+    }
+
+    &-footer {
+      color: #fab63e;
+    }
+  }
+}
+
+.contactUs {
+  height: 550px;
+  color: white;
+  background-color: #22356f;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  &-text {
+    width: 100%;
+    margin-left: 74.5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &-title {
+      font-size: 60px;
+    }
+
+    &-p {
+      font-size: 25px;
+    }
+  }
+
+  &-img {
+    width: 1000px;
+    background-image: url("../img/charles-etoroma-390119img.png");
+    background-position: center;
+  }
+}
+
+.footer {
+  color: white;
+  background-color: @logoColor;
+  width: 100%;
+  height: 50px;
+
+  &-span {
+    line-height: 50px;
+  }
 }

@@ -12,6 +12,13 @@ body {
   margin: 0 auto;
   font-family: "Albert Sans", sans-serif;
 }
+.container-img {
+  position: absolute;
+  background-repeat: no-repeat;
+  top: 0px;
+  right: 0;
+  z-index: -1;
+}
 .container-logo {
   color: #62d0df;
   font-size: 28px;
@@ -110,6 +117,7 @@ body {
   max-height: 500px;
 }
 .helpYouTitle {
+  color: #22356f;
   display: flex;
   justify-content: center;
 }
@@ -135,7 +143,7 @@ body {
 }
 .container-health-block {
   width: 100%;
-  height: 250px;
+  height: 260px;
   padding-top: 80px;
   padding-left: 50px;
 }
@@ -150,14 +158,86 @@ body {
   background-color: #22356f;
 }
 .container-health.twoContainer :nth-child(2) {
-  background-color: #0052C1;
+  background-color: #a56e07;
+}
+.container-health.twoContainer :nth-child(3) {
+  background-image: url("/img/joanna-kosinska-340748img.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .container-health.threeContainer {
-  background-color: #62D0DF;
+  background-color: #42a2af;
 }
 .container-health.threeContainer :nth-child(2) {
   background-color: #a4a8d1;
 }
 .container-health.threeContainer :nth-child(3) {
-  background-color: #8F00FF;
+  background-color: #8f00ff;
+}
+.NutritionalFacts-grid {
+  padding-top: 100px;
+  color: #22356f;
+  display: grid;
+  grid-template-columns: 390px 390px 390px;
+  justify-content: space-between;
+}
+.YouShouldAlso {
+  padding: 100px 0;
+  display: flex;
+}
+.YouShouldAlso img {
+  max-height: 550px;
+}
+.YouShouldAlso-text {
+  color: #22356f;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  line-height: 30px;
+  margin-left: 30px;
+}
+.YouShouldAlso-text-p {
+  font-size: 25px;
+}
+.YouShouldAlso-text-p span {
+  color: #62d0df;
+}
+.YouShouldAlso-text-footer {
+  color: #fab63e;
+}
+.contactUs {
+  height: 550px;
+  color: white;
+  background-color: #22356f;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.contactUs-text {
+  width: 100%;
+  margin-left: 74.5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.contactUs-text-title {
+  font-size: 60px;
+}
+.contactUs-text-p {
+  font-size: 25px;
+}
+.contactUs-img {
+  width: 1000px;
+  background-image: url("../img/charles-etoroma-390119img.png");
+  background-position: center;
+}
+.footer {
+  color: white;
+  background-color: #62d0df;
+  width: 100%;
+  height: 50px;
+}
+.footer-span {
+  line-height: 50px;
 }
